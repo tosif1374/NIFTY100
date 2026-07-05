@@ -1,0 +1,199 @@
+import re
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+from src.etl.excel_loader import load_csv_smart
+from src.etl.normalize import normalize_year
+from db.loader import get_connection, init_schema, load_dataframe, record_load_audit
+
+LOAD_ORDER = [
+    ("companies", "Basic_Info.csv", "companies"),
+    ("profitandloss", "Yearly_Profit_Loss.csv", "profit_and_loss"),
+    ("balancesheet", "Yearly_Balance_Sheet.csv", "balance_sheet"),
+    ("cashflow", "Yearly_Cash_flow.csv", "cash_flow"),
+]
+
+
+def _canonical_metric_name(value) -> str:
+    return re.sub(r"[^a-z0-9]+", "", str(value).strip().lower())
+
+
+def _ensure_company(conn, company_name: str) -> int:
+    existing = conn.execute(
+        "SELECT id FROM companies WHERE company_name = ? LIMIT 1",
+        (company_name,),
+    ).fetchone()
+    if existing is not None:
+        return int(existing[0])
+    cur = conn.execute("INSERT INTO companies (company_name) VALUES (?)", (company_name,))
+    conn.commit()
+    return int(cur.lastrowid)
+
+
+def _build_financial_rows(df: pd.DataFrame, company_id: int, metric_aliases: dict[str, list[str]]) -> pd.DataFrame:
+    if df.empty:
+        return pd.DataFrame(columns=["company_id", "year", *metric_aliases.keys()])
+
+    metric_col = df.columns[0]
+    if str(metric_col).lower() in {"unnamed", "unnamed:_0", "unnamed_0", "index", "metric"}:
+        metric_col = df.columns[1]
+    rows = []
+
+    for year_col in df.columns[1:]:
+        year = normalize_year(str(year_col).replace("_", " "))
+        if year is None:
+            continue
+
+        metric_values = {}
+        for _, row in df[[metric_col, year_col]].iterrows():
+            metric_name = _canonical_metric_name(row[metric_col])
+            if metric_name:
+                metric_values[metric_name] = row[year_col]
+
+        payload = {"company_id": company_id, "year": year}
+        for target_col, aliases in metric_aliases.items():
+            value = None
+            for alias in aliases:
+                alias_key = _canonical_metric_name(alias)
+                if alias_key in metric_values:
+                    value = metric_values[alias_key]
+                    break
+            if value is None:
+                payload[target_col] = None
+            else:
+                payload[target_col] = pd.to_numeric(value, errors="coerce")
+        rows.append(payload)
+
+    return pd.DataFrame(rows)
+
+
+def backfill_from_bulk_directory(companies_df: pd.DataFrame, bulk_path: str) -> pd.DataFrame:
+    """Fill missing website/metadata in companies_df using the bulk NSE/BSE directory,
+    joined on ISIN code (not company name — name strings rarely match exactly)."""
+    bulk = pd.read_csv(bulk_path)
+    bulk.columns = [c.strip().lower().replace(" ", "_") for c in bulk.columns]
+    if "isin" not in companies_df.columns or "isin" not in bulk.columns:
+        return companies_df
+
+    merged = companies_df.merge(
+        bulk[["isin", "website"]],
+        on="isin",
+        how="left",
+        suffixes=("", "_bulk"),
+    )
+    merged["website"] = merged["website"].fillna(merged["website_bulk"])
+    return merged.drop(columns=["website_bulk"])
+
+
+def run_full_load(raw_dir: str, db_path: str, schema_path: str, audit_csv_path: str):
+    conn = get_connection(db_path)
+    init_schema(conn, schema_path)
+    raw = Path(raw_dir)
+    audit_rows = []
+
+    company_dirs = [p for p in raw.iterdir() if p.is_dir()]
+    for company_dir in company_dirs:
+        company_name = company_dir.name
+        print(f"Processing company: {company_name}")
+        company_id = _ensure_company(conn, company_name)
+
+        for key, filename, table in LOAD_ORDER:
+            full_path = company_dir / filename
+            if not full_path.exists():
+                continue
+
+            df = load_csv_smart(full_path)
+            if key == "companies":
+                df = df.iloc[:1].copy()
+                df["company_name"] = company_name
+                df = df[["company_name"]].copy()
+            elif key == "profitandloss":
+                df = _build_financial_rows(
+                    df,
+                    company_id,
+                    {
+                        "sales": ["sales"],
+                        "expenses": ["expenses"],
+                        "operating_profit": ["operating profit"],
+                        "other_income": ["other income"],
+                        "interest": ["interest"],
+                        "depreciation": ["depreciation"],
+                        "profit_before_tax": ["profit before tax"],
+                        "net_profit": ["net profit"],
+                        "eps": ["eps in rs", "eps"],
+                        "dividend_payout": ["dividend payout", "dividend"],
+                    },
+                )
+            elif key == "balancesheet":
+                df = _build_financial_rows(
+                    df,
+                    company_id,
+                    {
+                        "equity_capital": ["equity capital"],
+                        "reserves": ["reserves"],
+                        "borrowings": ["borrowings"],
+                        "other_liabilities": ["other liabilities"],
+                        "total_liabilities": ["total liabilities"],
+                        "fixed_assets": ["fixed assets"],
+                        "cwip": ["cwip"],
+                        "investments": ["investments"],
+                        "other_asset": ["other assets"],
+                        "total_assets": ["total assets"],
+                    },
+                )
+            elif key == "cashflow":
+                df = _build_financial_rows(
+                    df,
+                    company_id,
+                    {
+                        "operating_activity": ["cash from operating activity", "operating activity"],
+                        "investing_activity": ["cash from investing activity", "investing activity"],
+                        "financing_activity": ["cash from financing activity", "financing activity"],
+                        "net_cash_flow": ["net cash flow"],
+                    },
+                )
+
+            df.columns = [
+                str(col).strip().lower().replace(" ", "_").replace("-", "_").replace("/", "_")
+                for col in df.columns
+            ]
+            df.columns = [c if c.isidentifier() else f"col_{i}" for i, c in enumerate(df.columns)]
+
+            attempted, loaded = load_dataframe(conn, df, table)
+            record_load_audit(
+                conn,
+                str(full_path.relative_to(raw)),
+                attempted,
+                loaded,
+                notes="" if attempted == loaded else "see validation_failures.csv",
+            )
+            audit_rows.append(
+                {
+                    "file": str(full_path.relative_to(raw)),
+                    "table": table,
+                    "rows_attempted": attempted,
+                    "rows_loaded": loaded,
+                    "rows_rejected": attempted - loaded,
+                }
+            )
+            print(f" [ok] {full_path.name}: {loaded}/{attempted} rows loaded into {table}")
+
+    out_path = Path(audit_csv_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(audit_rows).to_csv(out_path, index=False)
+    conn.close()
+    print(f"\nFull load complete. Audit written to {audit_csv_path}")
+
+
+if __name__ == "__main__":
+    run_full_load(
+        raw_dir="./data/raw",
+        db_path="./db/nifty100.db",
+        schema_path="./db/schema.sql",
+        audit_csv_path="./data/validation/load_audit.csv",
+    )

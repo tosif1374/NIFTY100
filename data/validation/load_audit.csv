@@ -1,0 +1,396 @@
+file,table,rows_attempted,rows_loaded,rows_rejected
+Adani Enterprises Ltd\Basic_Info.csv,companies,1,1,0
+Adani Enterprises Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Adani Enterprises Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Adani Enterprises Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Adani Green Energy Ltd\Basic_Info.csv,companies,1,1,0
+Adani Green Energy Ltd\Yearly_Profit_Loss.csv,profit_and_loss,7,0,7
+Adani Green Energy Ltd\Yearly_Balance_Sheet.csv,balance_sheet,8,7,1
+Adani Green Energy Ltd\Yearly_Cash_flow.csv,cash_flow,7,7,0
+Adani Ports _ Special Economic Zone Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Adani Ports _ Special Economic Zone Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Adani Ports _ Special Economic Zone Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Adani Power Ltd\Basic_Info.csv,companies,1,1,0
+Adani Power Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Adani Power Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Adani Power Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Adani Total Gas Ltd\Basic_Info.csv,companies,1,1,0
+Adani Total Gas Ltd\Yearly_Profit_Loss.csv,profit_and_loss,6,0,6
+Adani Total Gas Ltd\Yearly_Balance_Sheet.csv,balance_sheet,7,6,1
+Adani Total Gas Ltd\Yearly_Cash_flow.csv,cash_flow,6,6,0
+Apollo Hospitals Enterprise Ltd\Basic_Info.csv,companies,1,1,0
+Apollo Hospitals Enterprise Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Apollo Hospitals Enterprise Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Apollo Hospitals Enterprise Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Asian Paints Ltd\Basic_Info.csv,companies,1,1,0
+Asian Paints Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Asian Paints Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Asian Paints Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Avenue Supermarts Ltd\Basic_Info.csv,companies,1,1,0
+Avenue Supermarts Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Avenue Supermarts Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Avenue Supermarts Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Axis Bank Ltd\Basic_Info.csv,companies,1,1,0
+Axis Bank Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Axis Bank Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Axis Bank Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Bajaj Auto Ltd\Basic_Info.csv,companies,1,1,0
+Bajaj Auto Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Bajaj Auto Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Bajaj Auto Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Bajaj Finance Ltd\Basic_Info.csv,companies,1,1,0
+Bajaj Finance Ltd\Yearly_Profit_Loss.csv,profit_and_loss,9,0,9
+Bajaj Finance Ltd\Yearly_Balance_Sheet.csv,balance_sheet,10,9,1
+Bajaj Finance Ltd\Yearly_Cash_flow.csv,cash_flow,9,9,0
+Bajaj Finserv Ltd\Basic_Info.csv,companies,1,1,0
+Bajaj Finserv Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Bajaj Finserv Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Bajaj Finserv Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Bank of Baroda\Basic_Info.csv,companies,1,1,0
+Bank of Baroda\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Bank of Baroda\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Bank of Baroda\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Bharat Electronics Ltd\Basic_Info.csv,companies,1,1,0
+Bharat Electronics Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Bharat Electronics Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Bharat Electronics Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Bharat Petroleum Corporation Ltd\Basic_Info.csv,companies,1,1,0
+Bharat Petroleum Corporation Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Bharat Petroleum Corporation Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Bharat Petroleum Corporation Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Bharti Airtel Ltd\Basic_Info.csv,companies,1,1,0
+Bharti Airtel Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Bharti Airtel Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Bharti Airtel Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Britannia Industries Ltd\Basic_Info.csv,companies,1,1,0
+Britannia Industries Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Britannia Industries Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Britannia Industries Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Canara Bank\Basic_Info.csv,companies,1,1,0
+Canara Bank\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Canara Bank\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Canara Bank\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Cholamandalam Investment _ Finance Company Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Cholamandalam Investment _ Finance Company Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Cholamandalam Investment _ Finance Company Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Cipla Ltd\Basic_Info.csv,companies,1,1,0
+Cipla Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Cipla Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Cipla Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Coal India Ltd\Basic_Info.csv,companies,1,1,0
+Coal India Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Coal India Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Coal India Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Cummins India Ltd\Basic_Info.csv,companies,1,1,0
+Cummins India Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Cummins India Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Cummins India Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Dabur India Ltd\Basic_Info.csv,companies,1,1,0
+Dabur India Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Dabur India Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Dabur India Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Divis Laboratories Ltd\Basic_Info.csv,companies,1,1,0
+Divis Laboratories Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Divis Laboratories Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Divis Laboratories Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+DLF Ltd\Basic_Info.csv,companies,1,1,0
+DLF Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+DLF Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+DLF Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Dr Reddys Laboratories Ltd\Basic_Info.csv,companies,1,1,0
+Dr Reddys Laboratories Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Dr Reddys Laboratories Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Dr Reddys Laboratories Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Eicher Motors Ltd\Basic_Info.csv,companies,1,1,0
+Eicher Motors Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Eicher Motors Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Eicher Motors Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+FSN E-Commerce Ventures Ltd\Basic_Info.csv,companies,1,1,0
+FSN E-Commerce Ventures Ltd\Yearly_Profit_Loss.csv,profit_and_loss,6,0,6
+FSN E-Commerce Ventures Ltd\Yearly_Balance_Sheet.csv,balance_sheet,7,6,1
+FSN E-Commerce Ventures Ltd\Yearly_Cash_flow.csv,cash_flow,6,6,0
+GAIL (India) Ltd\Basic_Info.csv,companies,1,1,0
+GAIL (India) Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+GAIL (India) Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+GAIL (India) Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Godrej Consumer Products Ltd\Basic_Info.csv,companies,1,1,0
+Godrej Consumer Products Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Godrej Consumer Products Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Godrej Consumer Products Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Godrej Properties Ltd\Basic_Info.csv,companies,1,1,0
+Godrej Properties Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Godrej Properties Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Godrej Properties Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Grasim Industries Ltd\Basic_Info.csv,companies,1,1,0
+Grasim Industries Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Grasim Industries Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Grasim Industries Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Havells India Ltd\Basic_Info.csv,companies,1,1,0
+Havells India Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Havells India Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Havells India Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+HCL Technologies Ltd\Basic_Info.csv,companies,1,1,0
+HCL Technologies Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+HCL Technologies Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+HCL Technologies Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+HDFC Asset Management Company Ltd\Basic_Info.csv,companies,1,1,0
+HDFC Asset Management Company Ltd\Yearly_Profit_Loss.csv,profit_and_loss,11,0,11
+HDFC Asset Management Company Ltd\Yearly_Balance_Sheet.csv,balance_sheet,12,11,1
+HDFC Asset Management Company Ltd\Yearly_Cash_flow.csv,cash_flow,11,11,0
+HDFC Bank Ltd\Basic_Info.csv,companies,1,1,0
+HDFC Bank Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+HDFC Bank Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+HDFC Bank Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+HDFC Life Insurance Company Ltd\Basic_Info.csv,companies,1,1,0
+HDFC Life Insurance Company Ltd\Yearly_Profit_Loss.csv,profit_and_loss,11,0,11
+HDFC Life Insurance Company Ltd\Yearly_Balance_Sheet.csv,balance_sheet,12,11,1
+HDFC Life Insurance Company Ltd\Yearly_Cash_flow.csv,cash_flow,11,11,0
+Hero MotoCorp Ltd\Basic_Info.csv,companies,1,1,0
+Hero MotoCorp Ltd\Yearly_Profit_Loss.csv,profit_and_loss,10,0,10
+Hero MotoCorp Ltd\Yearly_Balance_Sheet.csv,balance_sheet,11,10,1
+Hero MotoCorp Ltd\Yearly_Cash_flow.csv,cash_flow,10,10,0
+Hindalco Industries Ltd\Basic_Info.csv,companies,1,1,0
+Hindalco Industries Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Hindalco Industries Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Hindalco Industries Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Hindustan Unilever Ltd\Basic_Info.csv,companies,1,1,0
+Hindustan Unilever Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Hindustan Unilever Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Hindustan Unilever Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Hindustan Zinc Ltd\Basic_Info.csv,companies,1,1,0
+Hindustan Zinc Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Hindustan Zinc Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Hindustan Zinc Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+ICICI Bank Ltd\Basic_Info.csv,companies,1,1,0
+ICICI Bank Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+ICICI Bank Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+ICICI Bank Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+ICICI Prudential Life Insurance Company Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+ICICI Prudential Life Insurance Company Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+ICICI Prudential Life Insurance Company Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Indian Oil Corporation Ltd\Basic_Info.csv,companies,1,1,0
+Indian Oil Corporation Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Indian Oil Corporation Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Indian Oil Corporation Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Indian Railway Finance Corporation Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Indian Railway Finance Corporation Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Indian Railway Finance Corporation Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+IndusInd Bank Ltd\Basic_Info.csv,companies,1,1,0
+IndusInd Bank Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+IndusInd Bank Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+IndusInd Bank Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Infosys Ltd\Basic_Info.csv,companies,1,1,0
+Infosys Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Infosys Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Infosys Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Interglobe Aviation Ltd\Basic_Info.csv,companies,1,1,0
+Interglobe Aviation Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Interglobe Aviation Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Interglobe Aviation Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+ITC Ltd\Basic_Info.csv,companies,1,1,0
+ITC Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+ITC Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+ITC Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Jindal Steel _ Power Ltd\Basic_Info.csv,companies,1,1,0
+Jindal Steel _ Power Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Jindal Steel _ Power Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Jindal Steel _ Power Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Jio Financial Services Ltd\Basic_Info.csv,companies,1,1,0
+Jio Financial Services Ltd\Yearly_Profit_Loss.csv,profit_and_loss,1,1,0
+Jio Financial Services Ltd\Yearly_Balance_Sheet.csv,balance_sheet,2,1,1
+Jio Financial Services Ltd\Yearly_Cash_flow.csv,cash_flow,1,1,0
+JSW Energy Ltd\Basic_Info.csv,companies,1,1,0
+JSW Energy Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+JSW Energy Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+JSW Energy Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+JSW Steel Ltd\Basic_Info.csv,companies,1,1,0
+JSW Steel Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+JSW Steel Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+JSW Steel Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Kotak Mahindra Bank Ltd\Basic_Info.csv,companies,1,1,0
+Kotak Mahindra Bank Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Kotak Mahindra Bank Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Kotak Mahindra Bank Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Larsen _ Toubro Ltd\Basic_Info.csv,companies,1,1,0
+Larsen _ Toubro Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Larsen _ Toubro Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Larsen _ Toubro Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Life Insurance Corporation of India\Basic_Info.csv,companies,1,1,0
+Life Insurance Corporation of India\Yearly_Profit_Loss.csv,profit_and_loss,7,0,7
+Life Insurance Corporation of India\Yearly_Balance_Sheet.csv,balance_sheet,8,7,1
+Life Insurance Corporation of India\Yearly_Cash_flow.csv,cash_flow,7,7,0
+LTIMindtree Ltd\Basic_Info.csv,companies,1,1,0
+LTIMindtree Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+LTIMindtree Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+LTIMindtree Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Lupin Ltd\Basic_Info.csv,companies,1,1,0
+Lupin Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Lupin Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Lupin Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Mahindra _ Mahindra Ltd\Basic_Info.csv,companies,1,1,0
+Mahindra _ Mahindra Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Mahindra _ Mahindra Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Mahindra _ Mahindra Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Mankind Pharma Ltd\Basic_Info.csv,companies,1,1,0
+Mankind Pharma Ltd\Yearly_Profit_Loss.csv,profit_and_loss,6,0,6
+Mankind Pharma Ltd\Yearly_Balance_Sheet.csv,balance_sheet,7,6,1
+Mankind Pharma Ltd\Yearly_Cash_flow.csv,cash_flow,6,6,0
+Marico Ltd\Basic_Info.csv,companies,1,1,0
+Marico Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Marico Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Marico Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Maruti Suzuki India Ltd\Basic_Info.csv,companies,1,1,0
+Maruti Suzuki India Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Maruti Suzuki India Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Maruti Suzuki India Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Nestle India Ltd\Basic_Info.csv,companies,1,1,0
+Nestle India Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Nestle India Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,13,0
+Nestle India Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+NHPC Ltd\Basic_Info.csv,companies,1,1,0
+NHPC Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+NHPC Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+NHPC Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+NTPC Ltd\Basic_Info.csv,companies,1,1,0
+NTPC Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+NTPC Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+NTPC Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Oberoi Realty Ltd\Basic_Info.csv,companies,1,1,0
+Oberoi Realty Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Oberoi Realty Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Oberoi Realty Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Oil India Ltd\Basic_Info.csv,companies,1,1,0
+Oil India Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Oil India Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Oil India Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Oil _ Natural Gas Corpn Ltd\Basic_Info.csv,companies,1,1,0
+Oil _ Natural Gas Corpn Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Oil _ Natural Gas Corpn Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Oil _ Natural Gas Corpn Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Persistent Systems Ltd\Basic_Info.csv,companies,1,1,0
+Persistent Systems Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Persistent Systems Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Persistent Systems Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Pidilite Industries Ltd\Basic_Info.csv,companies,1,1,0
+Pidilite Industries Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Pidilite Industries Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Pidilite Industries Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Polycab India Ltd\Basic_Info.csv,companies,1,1,0
+Polycab India Ltd\Yearly_Profit_Loss.csv,profit_and_loss,10,0,10
+Polycab India Ltd\Yearly_Balance_Sheet.csv,balance_sheet,11,10,1
+Polycab India Ltd\Yearly_Cash_flow.csv,cash_flow,10,10,0
+Power Grid Corporation of India Ltd\Basic_Info.csv,companies,1,1,0
+Power Grid Corporation of India Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Power Grid Corporation of India Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Power Grid Corporation of India Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Punjab National Bank\Basic_Info.csv,companies,1,1,0
+Punjab National Bank\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Punjab National Bank\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Punjab National Bank\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Reliance Industries Ltd\Basic_Info.csv,companies,1,1,0
+Reliance Industries Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Reliance Industries Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Reliance Industries Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Samvardhana Motherson International Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Samvardhana Motherson International Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Samvardhana Motherson International Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+SBI Cards _ Payment Services Ltd\Basic_Info.csv,companies,1,1,0
+SBI Cards _ Payment Services Ltd\Yearly_Profit_Loss.csv,profit_and_loss,11,0,11
+SBI Cards _ Payment Services Ltd\Yearly_Balance_Sheet.csv,balance_sheet,12,11,1
+SBI Cards _ Payment Services Ltd\Yearly_Cash_flow.csv,cash_flow,11,11,0
+SBI Life Insurance Company Ltd\Basic_Info.csv,companies,1,1,0
+SBI Life Insurance Company Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+SBI Life Insurance Company Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+SBI Life Insurance Company Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Shriram Finance Ltd\Basic_Info.csv,companies,1,1,0
+Shriram Finance Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Shriram Finance Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Shriram Finance Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Siemens Ltd\Basic_Info.csv,companies,1,1,0
+Siemens Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,12,0
+Siemens Ltd\Yearly_Balance_Sheet.csv,balance_sheet,12,12,0
+Siemens Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+State Bank of India\Basic_Info.csv,companies,1,1,0
+State Bank of India\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+State Bank of India\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+State Bank of India\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Sun Pharmaceuticals Industries Ltd\Basic_Info.csv,companies,1,1,0
+Sun Pharmaceuticals Industries Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Sun Pharmaceuticals Industries Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Sun Pharmaceuticals Industries Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Sun TV Network Ltd\Basic_Info.csv,companies,1,1,0
+Sun TV Network Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Sun TV Network Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Sun TV Network Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Tata Consultancy Services Ltd\Basic_Info.csv,companies,1,1,0
+Tata Consultancy Services Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Tata Consultancy Services Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Tata Consultancy Services Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Tata Consumer Products Ltd\Basic_Info.csv,companies,1,1,0
+Tata Consumer Products Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Tata Consumer Products Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Tata Consumer Products Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Tata Elxsi Ltd\Basic_Info.csv,companies,1,1,0
+Tata Elxsi Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Tata Elxsi Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Tata Elxsi Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Tata Motors Ltd\Basic_Info.csv,companies,1,1,0
+Tata Motors Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Tata Motors Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Tata Motors Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Tata Power Company Ltd\Basic_Info.csv,companies,1,1,0
+Tata Power Company Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Tata Power Company Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Tata Power Company Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Tata Steel Ltd\Basic_Info.csv,companies,1,1,0
+Tata Steel Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Tata Steel Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Tata Steel Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Tech Mahindra Ltd\Basic_Info.csv,companies,1,1,0
+Tech Mahindra Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Tech Mahindra Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Tech Mahindra Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Titan Company Ltd\Basic_Info.csv,companies,1,1,0
+Titan Company Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Titan Company Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Titan Company Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Torrent Pharmaceuticals Ltd\Basic_Info.csv,companies,1,1,0
+Torrent Pharmaceuticals Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Torrent Pharmaceuticals Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Torrent Pharmaceuticals Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Torrent Power Ltd\Basic_Info.csv,companies,1,1,0
+Torrent Power Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Torrent Power Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Torrent Power Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Trent Ltd\Basic_Info.csv,companies,1,1,0
+Trent Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Trent Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Trent Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+TVS Motor Company Ltd\Basic_Info.csv,companies,1,1,0
+TVS Motor Company Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+TVS Motor Company Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+TVS Motor Company Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+UltraTech Cement Ltd\Basic_Info.csv,companies,1,1,0
+UltraTech Cement Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+UltraTech Cement Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+UltraTech Cement Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+UPL Ltd\Basic_Info.csv,companies,1,1,0
+UPL Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+UPL Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+UPL Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Vedanta Ltd\Basic_Info.csv,companies,1,1,0
+Vedanta Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Vedanta Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Vedanta Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Voltas Ltd\Basic_Info.csv,companies,1,1,0
+Voltas Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Voltas Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Voltas Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Wipro Ltd\Basic_Info.csv,companies,1,1,0
+Wipro Ltd\Yearly_Profit_Loss.csv,profit_and_loss,12,0,12
+Wipro Ltd\Yearly_Balance_Sheet.csv,balance_sheet,13,12,1
+Wipro Ltd\Yearly_Cash_flow.csv,cash_flow,12,12,0
+Zomato Ltd\Basic_Info.csv,companies,1,1,0
+Zomato Ltd\Yearly_Profit_Loss.csv,profit_and_loss,6,0,6
+Zomato Ltd\Yearly_Balance_Sheet.csv,balance_sheet,7,6,1
+Zomato Ltd\Yearly_Cash_flow.csv,cash_flow,6,6,0
