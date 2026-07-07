@@ -23,7 +23,16 @@ def compute_leverage_trend(company_id: int) -> pd.DataFrame:
     ORDER BY year
     """
     df = query_df(sql, (company_id,))
-    df["de_ratio_delta_3yr"] = df["de_ratio"].diff(3).round(3)
+    df["de_ratio"] = pd.to_numeric(
+    df["de_ratio"],
+    errors="coerce"
+)
+
+    df["de_ratio_delta_3yr"] = (
+    df["de_ratio"]
+    .diff(3)
+    .round(3)
+)
     return df
 def compute_working_capital(company_id: int) -> pd.DataFrame:
     """
@@ -65,8 +74,17 @@ def compute_asset_quality(company_id: int) -> pd.DataFrame:
     ORDER BY year
     """
     df = query_df(sql, (company_id,))
-    df["asset_growth_yoy"] = df["total_assets"].pct_change().mul(100).round(2)
-    return df
+    df["total_assets"] = pd.to_numeric(
+    df["total_assets"],
+    errors="coerce"
+)
+
+    df["asset_growth_yoy"] = (
+    df["total_assets"]
+    .pct_change()
+    .mul(100)
+    .round(2)
+)
 def compute_reserves_growth(company_id: int) -> pd.DataFrame:
     """
     Reserves growth is a proxy for retained earnings accumulation.

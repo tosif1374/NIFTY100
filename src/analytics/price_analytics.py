@@ -18,7 +18,18 @@ def compute_monthly_returns(company_id: int) -> pd.DataFrame:
     Log return: ln(P_t / P_{t-1})
     """
     df = _prices(company_id)
-    df["simple_return"] = df["close_price"].pct_change().round(6)
+    df = load_price_data(company_id)
+
+    df["close_price"] = pd.to_numeric(
+    df["close_price"],
+    errors="coerce"
+)
+
+    df["simple_return"] = (
+    df["close_price"]
+    .pct_change()
+    .round(6)
+)
     df["log_return"] = np.log(df["close_price"] / df["close_price"].shift(1)).round(6)
     return df
 def compute_rolling_sharpe(company_id: int, window: int = 12) -> pd.DataFrame:

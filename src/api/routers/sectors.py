@@ -4,6 +4,7 @@ from pathlib import Path
 
 from ..deps import CurrentUser, SnapshotDir
 from ..schemas import SectorSummary
+from ..deps import DbDep
 
 router = APIRouter()
 
@@ -55,7 +56,11 @@ async def get_sector_detail(
 
 
 @router.get("/sector-names", response_model=list[str])
-async def list_sector_names(db: "DbDep", _: CurrentUser):
+
+async def list_sector_names(
+    db: DbDep,
+    current_user: CurrentUser,
+):
     """Utility: list all distinct sector names from sector_mapping."""
     from ..deps import DbDep
 

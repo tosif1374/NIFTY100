@@ -26,6 +26,11 @@ def compute_fcf(company_id: int) -> pd.DataFrame:
     bs["capex"] = bs["gross_fixed"].diff() # positive = capex outflow
     merged = cf.merge(bs[["year","capex"]], on="year", how="left")
     merged["fcf"] = merged["operating_activity"] - merged["capex"].clip(lower=0)
+    merged["fcf"] = pd.to_numeric(
+    merged["fcf"],
+    errors="coerce"
+)
+
     merged["fcf"] = merged["fcf"].round(2)
     return merged
 def compute_cfo_quality(company_id: int) -> pd.DataFrame:

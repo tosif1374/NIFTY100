@@ -35,7 +35,7 @@ async def list_companies(
 async def get_company_summary(
     company_id: int,
     snapshot_dir: SnapshotDir,
-    _: CurrentUser,
+    current_user: CurrentUser,
     live: bool = Query(False, description="Use live analytics instead of snapshot"),
 ):
     """
@@ -74,7 +74,7 @@ async def get_company_summary(
 @router.get("/company/{company_id}/ratios", response_model=RatiosResponse)
 async def get_company_ratios(
     company_id: int,
-    _: CurrentUser,
+    current_user: CurrentUser,
     start_year: int | None = Query(None),
     end_year: int | None = Query(None),
 ):
@@ -98,7 +98,7 @@ async def get_company_ratios(
 @router.get("/company/{company_id}/pnl", response_model=PnLResponse)
 async def get_company_pnl(
     company_id: int,
-    _: CurrentUser,
+    current_user: CurrentUser,
     cagr_years: int = Query(5, ge=1, le=10),
 ):
     """P&L trends: sales/profit CAGR, margin series, EPS unit flag count."""

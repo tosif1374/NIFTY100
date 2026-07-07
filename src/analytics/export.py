@@ -16,7 +16,13 @@ from .price_analytics import compute_price_summary
 from .sector_analytics import compute_all_sectors_latest, compute_peer_ranking
 SNAPSHOT_DIR = Path("./data/snapshots")
 SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)
-LATEST_YEAR = 2024
+from .db import query_df
+
+LATEST_YEAR = int(
+    query_df(
+        "SELECT MAX(year) AS latest_year FROM profit_and_loss"
+    ).iloc[0]["latest_year"]
+)
 def _load_company_ids() -> list[int]:
     df = query_df("SELECT id FROM companies ORDER BY id")
     return list(df["id"].astype(int))

@@ -17,7 +17,11 @@ def get_db() -> Generator[sqlite3.Connection, None, None]:
     FastAPI dependency: yields a read-only SQLite connection per request.
     Connection is automatically closed after the response is sent.
     """
-    conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
+    conn = sqlite3.connect(
+    f"file:{DB_PATH}?mode=ro",
+    uri=True,
+    check_same_thread=False
+)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON;")
     try:

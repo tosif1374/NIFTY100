@@ -1,0 +1,38 @@
+sector,year,n_companies,roe_mean,roe_median,roce_mean,de_mean,op_margin_mean
+Agro Chemicals,2023,1,,,,,19.03
+Air Transport Service,2023,1,,,,,11.98
+Automobile,2023,7,,,,,14.5
+Banks,2023,9,,,,,
+Cables,2023,1,,,,,13.06
+Capital Goods - Electrical Equipment,2023,1,,,,,
+Capital Goods-Non Electrical Equipment,2023,1,,,,,16.05
+Cement,2023,1,,,,,16.79
+Chemicals,2023,1,,,,,16.83
+Consumer Durables,2023,2,,,,,7.18
+Diamond Gems and Jewellery,2023,1,,,,,12.03
+E-Commerce/App based Aggregator,2023,2,,,,,-6.06
+Edible Oil,2023,1,,,,,18.54
+Electronics,2023,1,,,,,23.06
+Entertainment,2023,1,,,,,63.44
+FMCG,2023,4,,,,,19.46
+Finance,2023,6,,,,,57.12
+Gas Distribution,2023,2,,,,,12.51
+Healthcare,2023,1,,,,,12.43
+IT - Software,2023,8,,,,,21.61
+Infrastructure Developers & Operators,2023,1,,,,,14.72
+Insurance,2023,3,,,,,1.6
+Mining & Mineral products,2023,2,,,,,25.0
+Non Ferrous Metals,2023,2,,,,,30.76
+Paints/Varnish,2023,1,,,,,18.15
+Pharmaceuticals,2023,7,,,,,23.78
+Plantation & Plantation Products,2023,1,,,,,13.47
+Power Generation & Distribution,2023,8,,,,,40.55
+Realty,2023,3,,,,,29.96
+Refineries,2023,3,,,,,7.4
+Retail,2023,2,,,,,11.0
+Steel,2023,3,,,,,14.36
+Telecomm-Service,2023,1,,,,,51.22
+Textiles,2023,1,,,,,18.35
+Tobacco Products,2023,1,,,,,36.24
+Trading,2023,1,,,,,6.44
+de Oil & Natural Gas,2023,2,,,,,27.12

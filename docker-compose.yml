@@ -1,0 +1,55 @@
+# docker-compose.yml
+version: "3.9"
+services:
+# nn FastAPI Backend nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+api:
+build:
+context: .
+target: api
+container_name: nifty100_api
+ports:
+- "8000:8000"
+volumes:
+- ./db:/app/db # nifty100.db persisted on host
+- ./data:/app/data # snapshots + raw data
+environment:
+- DB_PATH=/app/db/nifty100.db
+- SNAPSHOT_DIR=/app/data/snapshots
+- JWT_SECRET_KEY=${JWT_SECRET_KEY}
+- JWT_EXPIRE_MINUTES=60
+- REDIS_URL=redis://redis:6379/0
+depends_on:
+redis:
+condition: service_healthy
+restart: unless-stopped
+# nn Streamlit Dashboard 
+dashboard:
+build:
+context: .
+target: dashboard
+container_name: nifty100_dashboard
+ports:
+- "8501:8501"
+environment:
+- API_BASE_URL=http://api:8000 # internal docker network name
+- API_USERNAME=analyst
+- API_PASSWORD=${API_PASSWORD}
+depends_on:
+- api
+restart: unless-stopped
+# nn Redis (rate limiter backend) 
+redis:
+image: redis:7-alpine
+container_name: nifty100_redis
+ports:
+- "6379:6379"
+volumes:
+- redis_data:/data
+healthcheck:
+test: ["CMD", "redis-cli", "ping"]
+interval: 5s
+timeout: 3s
+retries: 3
+restart: unless-stopped
+volumes:
+redis_data:
